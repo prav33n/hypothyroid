@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/border" >
+
+        <TextView
+            android:id="@+id/textView1"
+            style="@style/TitleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="14dp"
+            android:gravity="center"
+            android:text="@string/foodavoid"
+            android:textAppearance="@style/TitleBar"
+            android:textColor="@color/title_text_alt"
+            android:textSize="16dp"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/walnuts"
+            android:layout_width="125dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textView1"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="17dp"
+            android:background="@drawable/button"
+            android:onClick="onWalnutsclick"
+            android:text="@string/walnuts"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/soyflour"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/walnuts"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/walnuts"
+            android:layout_marginRight="18dp"
+            android:background="@drawable/button"
+            android:onClick="onSoyflourclick"
+            android:text="@string/soyflour"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/cottenseed"
+            android:layout_width="125dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/walnuts"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="28dp"
+            android:background="@drawable/button"
+            android:onClick="onCottenseedclick"
+            android:text="@string/cottenseedoil"
+            android:visibility="visible" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/avoidfoodlayout"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/relativeLayout1"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/border" >
+
+        <TextView
+            android:id="@+id/textView2"
+            style="@style/TitleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="fill_horizontal"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:text="@string/foodtoavoid4"
+            android:textColor="@color/title_text_alt"
+            android:textSize="16dp"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/ironsupplements"
+            android:layout_width="125dp"
+            android:layout_height="40dp"
+            android:layout_alignLeft="@+id/textView2"
+            android:layout_below="@+id/textView2"
+            android:layout_marginLeft="17dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button"
+            android:onClick="onIronsupplementsclick"
+            android:text="@string/ironsupplements"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/highfibersupplements"
+            android:layout_width="125dp"
+            android:layout_height="40dp"
+            android:layout_above="@+id/calciumsupplements"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/button"
+            android:onClick="onHighfiberlclick"
+            android:text="@string/highfiber"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/calciumsupplements"
+            android:layout_width="125dp"
+            android:layout_height="40dp"
+            android:layout_alignLeft="@+id/ironsupplements"
+            android:layout_below="@+id/ironsupplements"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/button"
+            android:onClick="onCalciumsupplementsclick"
+            android:text="@string/calciumsupplements"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/antacids"
+            android:layout_width="125dp"
+            android:layout_height="40dp"
+            android:layout_alignBottom="@+id/calciumsupplements"
+            android:layout_alignLeft="@+id/highfibersupplements"
+            android:layout_alignTop="@+id/calciumsupplements"
+            android:background="@drawable/button"
+            android:onClick="onAntacidsclick"
+            android:text="@string/antacids"
+            android:visibility="visible" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

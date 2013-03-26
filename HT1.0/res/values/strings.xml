@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Home</string>
+    <string name="app_name">Hypothyroid</string>
+    <string name="food">Food to Avoid</string>
+    <string name="home">HTHome</string>
+    <string name="video">Video</string>
+    <string name="settings">Alarm Setup</string>
+    <string name="news">Interesting</string>
+    <string name="save">Save Settings</string>
+    <string name="pillalarm">Time for a Thyroid Pill</string>
+    <string name="breakfasttime">Time to Wait before Eating</string>
+    <string name="alarmtone">Alarm Sound</string>
+    <string name="alarmtype">Alarm</string>
+    <string name="snooze">Snooze</string>
+    <string name="fooddescription">If you have hypothyroidism,take thyroid hormone replacement as directed by your doctor — generally on an empty stomach. It is also important to note that too much dietary fiber can impair the absorption of synthetic thyroid hormone. Certain foods, supplements and medications can have the same effect.</string>
+    <string name="foodavoid">Food to Avoid</string>
+    <string name="foodtoavoid4">Food to Avoid \n within 4 hours of taking Thyroid Pill</string>
+    <string name="soyflour">Soy Flour</string>
+    <string name="walnuts">Walnuts</string>
+    <string name="cottenseedoil">Cotton Seed Oil</string>
+    <string name="calciumsupplements">Calcium Supplements</string>
+    <string name="highfiber">High Fiber Foods</string>
+    <string name="ironsupplements">Iron Supplements</string>
+    <string name="antacids">Antacids</string>
+    <string name="title">Title</string>
+    <string name="materialtext">Material Text</string>
+    <string name="source">Source :</string>
+    <string name="timeleft">Time Left</string>
+ <string-array name="fooddelaya">
+<item>30 mins</item>	
+<item>45 mins</item>
+<item>60 mins</item>
+</string-array>
+ <string-array name="alarmtypea">
+<item>Loud</item>	
+<item>Vibrate</item>¨
+<item>Silent</item>
+<item>Off</item>
+</string-array>
+<string-array name="snoozedurationa">
+<item>5 mins</item>	
+<item>10 mins</item>
+<item>15 mins</item>
+</string-array>
+<string name="hypothyroid">HypoThyroid</string>
+<string name="share">Share with Friends</string>
+</resources>

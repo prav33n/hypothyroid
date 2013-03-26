@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+  <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+      android:id="@+id/relativeLayout1"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center"
+      android:layout_weight="0.10" >
+
+      <LinearLayout
+          android:id="@+id/linearLayout2"
+          style="@style/Theme"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_alignParentLeft="true"
+          android:layout_alignParentTop="true"
+          android:layout_margin="2dp"
+          android:layout_marginTop="10dp"
+          android:background="@drawable/border"
+          android:gravity="center"
+          android:orientation="horizontal" >
+
+          <TextView
+              android:id="@+id/pillalarmtext"
+              style="@style/TextBody"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_margin="2dp"
+              android:layout_weight="0.76"
+              android:text="@string/pillalarm"
+              android:textAppearance="?android:attr/textAppearanceSmall" />
+
+          <TimePicker
+              android:id="@+id/pilltime"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center_horizontal|center_vertical" />
+
+      </LinearLayout>
+      <LinearLayout
+          android:id="@+id/linearLayout3"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_alignParentLeft="true"
+          android:layout_alignParentRight="true"
+          android:layout_below="@+id/linearLayout2"
+          android:layout_margin="2dp"
+          android:layout_marginTop="10dp"
+          android:background="@drawable/border"
+          android:visibility="visible" >
+
+          <TextView
+              android:id="@+id/textView1"
+              style="@style/TextBody"
+              android:layout_width="123dp"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center"
+              android:layout_margin="2dp"
+              android:layout_weight="0.15"
+              android:text="@string/breakfasttime" />
+
+          <Spinner
+              android:id="@+id/fooddelay"
+              android:layout_width="175dp"
+              android:layout_height="wrap_content"
+              android:layout_weight="0.18"
+              android:entries="@array/fooddelaya"
+              android:textSize="10dp" />
+
+      </LinearLayout>
+
+      <LinearLayout
+          android:id="@+id/linearLayout5"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_alignParentLeft="true"
+          android:layout_below="@+id/linearLayout3"
+          android:layout_margin="2dp"
+          android:layout_marginTop="5dp"
+          android:background="@drawable/border"
+          android:visibility="visible" >
+
+          <TextView
+              android:id="@+id/textView3"
+              style="@style/TextBody"
+              android:layout_width="115dp"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center"
+              android:layout_margin="2dp"
+              android:layout_weight="0.22"
+              android:text="@string/alarmtype" />
+
+          <Spinner
+              android:id="@+id/alarmtype"
+              android:layout_width="125dp"
+              android:layout_height="wrap_content"
+              android:layout_weight="0.87"
+              android:entries="@array/alarmtypea"
+              android:textSize="10dp" />
+
+      </LinearLayout>
+
+      <LinearLayout
+          android:id="@+id/linearLayout4"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_alignParentLeft="true"
+          android:layout_below="@+id/linearLayout5"
+          android:layout_margin="2dp"
+          android:layout_marginTop="5dp"
+          android:background="@drawable/border"
+          android:visibility="visible" >
+
+          <TextView
+              android:id="@+id/textView2"
+              style="@style/TextBody"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center"
+              android:layout_margin="2dp"
+              android:layout_weight="0.81"
+              android:text="@string/alarmtone" />
+
+          <Spinner
+              android:id="@+id/foodalarmtoneid"
+              android:layout_width="125dp"
+              android:layout_height="50dp"
+              android:layout_weight="0.87"
+              android:textSize="10dp" />
+
+      </LinearLayout>
+
+      <LinearLayout
+          android:id="@+id/linearLayout6"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_alignParentLeft="true"
+          android:layout_below="@+id/linearLayout4"
+          android:layout_margin="2dp"
+          android:layout_marginTop="5dp"
+          android:background="@drawable/border"
+          android:visibility="visible" >
+
+          <TextView
+              android:id="@+id/textView4"
+              style="@style/TextBody"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center"
+              android:layout_margin="2dp"
+              android:layout_weight="0.03"
+              android:text="@string/snooze" />
+
+          <Spinner
+              android:id="@+id/snoozeduration"
+              android:layout_width="125dp"
+              android:layout_height="wrap_content"
+              android:layout_weight="0.02"
+              android:entries="@array/snoozedurationa"
+              android:textSize="10dp" />
+
+      </LinearLayout>
+
+      <LinearLayout
+          android:id="@+id/linearLayout7"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_alignParentLeft="true"
+          android:layout_below="@+id/linearLayout6"
+          android:layout_margin="2dp"
+          android:layout_marginTop="10dp"
+          android:gravity="center" >
+
+          <Button
+              android:id="@+id/save"
+              android:layout_width="match_parent"
+              android:layout_height="40dp"
+              android:background="@drawable/button"
+              android:gravity="center_horizontal|center_vertical"
+              android:onClick="onClickSave"
+              android:text="@string/save" />
+
+      </LinearLayout>
+
+  </RelativeLayout>

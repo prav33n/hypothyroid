@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ht.v1"
+    android:versionCode="2"
+    android:versionName="1.1" >
+
+    <uses-sdk android:minSdkVersion="7" 
+        android:targetSdkVersion="7" />
+<uses-permission android:name="android.permission.INTERNET" />
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+<uses-permission android:name="android.permission.VIBRATE"/>
+
+    <application
+        android:icon="@drawable/app_icon"
+        android:label="@string/app_name" 
+        android:theme="@style/app_theme"
+        >
+        <activity
+            android:name="ht.v1.home"
+            android:label="@string/hypothyroid" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="ht.v1.Settings"
+            android:label="@string/settings"
+            android:theme="@style/display_theme" 
+            >
+        </activity>
+         <activity
+            android:name="ht.v1.Food"
+            android:label="@string/food"
+            android:theme="@style/display_theme"
+             >
+        </activity>
+        <activity
+            android:name="ht.v1.Display"
+            android:label="view"
+            android:theme="@style/display_theme"
+            >
+        </activity>
+         <activity
+            android:name="ht.v1.Webview"
+            android:label="WebResource" 
+            android:theme="@style/Theme.D1"
+                  >
+        </activity>
+              <activity
+            android:name="ht.v1.Interesting"
+            android:label="Applicaiton Info" 
+            android:theme="@style/display_theme"
+                  >
+        </activity>
+        <receiver android:process=":remote" android:name="ht.v1.alarmreceiver">
+        </receiver>
+    </application>
+
+</manifest>
